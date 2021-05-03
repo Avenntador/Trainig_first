@@ -1,7 +1,7 @@
 import './App.css';
-import Profile from "./Profile";
-import Header from "./Header";
-import Content from "./Content";
+import Profile from "./components/Profile";
+import Header from "./components/Header";
+import Content from "./components/Content";
 import React from "react";
 
 const App = () => {

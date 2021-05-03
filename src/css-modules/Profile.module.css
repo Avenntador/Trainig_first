@@ -1,0 +1,6 @@
+.nav {
+    grid-area: n;
+    background-color: magenta;
+    min-width: 150px;
+}
+

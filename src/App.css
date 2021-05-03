@@ -10,30 +10,6 @@
         "n c c";
 }
 
-.header {
-    grid-area: h;
-    background-color: blue;
-    position: relative;
-}
 
-.header img {
-    width: 112px;
-    position: absolute;
-    margin-top: -12px;
-    left: 80px;
-}
 
-.nav {
-    grid-area: n;
-    background-color: magenta;
-    min-width: 150px;
-}
 
-.content {
-    grid-area: c;
-    background-color: burlywood;
-}
-
-.content img {
-    width: 1394px;
-}
