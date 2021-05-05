@@ -1,6 +1,6 @@
-import profileCSS from "../css-modules/Profile.module.css"
+import profileCSS from "./Navbar.module.css"
 
-const Profile = () => {
+const Navbar = () => {
     return(
         <div className= {profileCSS.nav}>
             <li>News</li>
@@ -10,4 +10,4 @@ const Profile = () => {
     )
 }
 
-export default Profile
+export default Navbar
