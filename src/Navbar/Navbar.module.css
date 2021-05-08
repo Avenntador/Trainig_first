@@ -2,5 +2,15 @@
     grid-area: n;
     background-color: magenta;
     min-width: 150px;
+    padding-top: 30px;
+    padding-left: 50px;
 }
 
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+.item a.active {
+    color: gold;
+}
