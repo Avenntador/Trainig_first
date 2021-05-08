@@ -1,10 +1,11 @@
 import React from 'react'
 import PostCSS from "./Post.module.css"
 
-const Post = () => {
+const Post = (props) => {
+
     return(
             <div className={PostCSS.item}>
-                My posts
+                {props.message}
             </div>
     )
 }

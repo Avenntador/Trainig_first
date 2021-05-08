@@ -4,7 +4,12 @@ import Post from "./Post/Post";
 
 const MyPosts = () => {
     return(
-        <Post />
+        <div>
+            <Post message = 'Zdarova'/>
+            <Post message = 'Moi perviy post'/>
+
+        </div>
+
     )
 }
 
