@@ -1,5 +1,6 @@
 .wrapper {
     max-width: 1680px;
+    min-height: 1080px;
     margin: 0 auto;
     display: grid;
     grid-template-rows:60px 1fr;

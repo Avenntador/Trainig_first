@@ -3,4 +3,12 @@
     grid-template-columns: 1fr 3fr;
 }
 
+.textAndButton textarea {
+    width: 500px;
+    height: 130px;
+}
 
+.textAndButton button {
+    width: 110px;
+    height: 27px;
+}
