@@ -2,8 +2,14 @@
     grid-area: n;
     background-color: magenta;
     min-width: 150px;
+
+}
+
+.navItems {
     padding-top: 15px;
-    padding-left: 50px;
+    padding-left: 20px;
+    font-family: "Century Gothic", serif;
+    font-size: 32px;
 }
 
 .item a {
@@ -14,3 +20,26 @@
 .item a.active {
     color: gold;
 }
+
+.friends {
+    font-size: 42px;
+    text-align: center;
+    padding-left: -15px;
+    padding-top: 120px;
+    color: white;
+}
+
+
+.friendsTopic {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    font-size: 20px;
+}
+
+.friendsTopic img {
+    width: 50px;
+    vertical-align: middle;
+    margin: 8px;
+    padding-top: 10px;
+}
+

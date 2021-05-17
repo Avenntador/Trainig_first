@@ -1,0 +1,11 @@
+.message {
+    padding: 30px;
+    font-family: "Century Gothic", serif;
+    font-size: 20px;
+}
+
+.message img {
+    width: 39px;
+    vertical-align: middle;
+    margin-right: 9px;
+}
