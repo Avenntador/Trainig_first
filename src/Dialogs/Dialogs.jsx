@@ -11,11 +11,15 @@ const Dialogs = (props) => {
     let newMessageElement = React.createRef();
 
     let addMessage = () => {
-        let text = newMessageElement.current.value;
-        alert(text);
+        props.addNewMessage();
+
     }
 
+    let onMessageChange = () => {
+        let text = newMessageElement.current.value;
+        props.updateNewTextMessage(text);
 
+    }
 
     return (
         <div className={dialogsCSS.dialogs}>
@@ -26,10 +30,12 @@ const Dialogs = (props) => {
                 {messages}
                 <div className={dialogsCSS.textAndButton}>
                     <div>
-                        <textarea ref={newMessageElement}></textarea>
+                        <textarea onChange={onMessageChange}
+                            ref={newMessageElement}
+                            value={props.newMessage}/>
                     </div>
                     <div>
-                        <button onClick={addMessage} > Send message</button>
+                        <button onClick={addMessage}>Send message</button>
                     </div>
                 </div>
             </div>
