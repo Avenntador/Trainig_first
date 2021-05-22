@@ -5,7 +5,6 @@ import FriendsTopic from "./FriendsTopic/FriendsTopic";
 
 
 const Navbar = (props) => {
-
     let friend = props.state.dialogs.map(sidebar => <FriendsTopic name={sidebar.name} imgURL={sidebar.imgURL}/>);
 
     return (
