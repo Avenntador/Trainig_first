@@ -5,13 +5,16 @@ import FriendsTopic from "./FriendsTopic/FriendsTopic";
 
 
 const Navbar = (props) => {
-    let friend = props.state.dialogs.map(sidebar => <FriendsTopic name={sidebar.name} imgURL={sidebar.imgURL}/>);
+    let friend = props.state.dialogsPage.dialogs.map(el=> <FriendsTopic name={el.name} imgURL={el.imgURL}/>);
 
     return (
-        <div className={navbarCSS.nav}>
+         <div className={navbarCSS.nav}>
             <div className={navbarCSS.navItems}>
                 <div className={navbarCSS.item}>
                     <NavLink to="/profile" activeClassName={navbarCSS.active}>Profile</NavLink>
+                </div>
+                <div className={navbarCSS.item}>
+                    <NavLink to="/users" activeClassName={navbarCSS.active}>Users</NavLink>
                 </div>
                 <div className={navbarCSS.item}>
                     <NavLink to="/dialogs" activeClassName={navbarCSS.active}>Messages</NavLink>
@@ -32,7 +35,6 @@ const Navbar = (props) => {
                     {friend}
                 </div>
             </div>
-
         </div>
     )
 }

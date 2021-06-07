@@ -8,6 +8,7 @@ import News from "./News/News";
 import Music from "./Music/Music";
 import Settings from "./Settings/Settings";
 import DialogsContainer from "./Dialogs/DialogsContainer";
+import UsersContainer from "./Users/UsersContainer";
 
 const App = (props) => {
 
@@ -15,15 +16,16 @@ const App = (props) => {
         <BrowserRouter>
             <div className="wrapper">
                 <Header/>
-                <Navbar state={props.state.dialogsPage}/>
+                <Navbar state={props.state}/>
                 <div className="wrapper-content">
                     <Route path='/dialogs'
-                           render={() => <DialogsContainer store={props.store}/>}/>
+                           render={() => <DialogsContainer />}/>
                     <Route path='/profile'
-                           render={() => <Profile store={props.store}/>}/>
+                           render={() => <Profile />}/>
                     <Route path='/news' render={() => <News/>}/>
                     <Route path='/music' render={() => <Music/>}/>
                     <Route path='/settings' render={() => <Settings/>}/>
+                    <Route path='/users' render={() => <UsersContainer />}/>
                 </div>
             </div>
         </BrowserRouter>
@@ -31,3 +33,4 @@ const App = (props) => {
 }
 
 export default App;
+
