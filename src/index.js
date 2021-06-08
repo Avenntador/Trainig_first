@@ -10,8 +10,7 @@ ReactDOM.render(
 
         <Provider store={store}>
             <App state={store.getState()}/>
-        </Provider>
-   ,
+        </Provider>,
     document.getElementById('root')
 );
 
