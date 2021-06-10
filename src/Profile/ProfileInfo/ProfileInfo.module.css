@@ -1,8 +1,14 @@
 .descriptionBlock img {
     width: 1394px;
+    text-align: center;
 }
 
 .item {
-    color: white;
-    text-align: center;
+    color: #050505;
+
+}
+
+.profilePic img {
+    width: 130px;
+    text-align: left;
 }
