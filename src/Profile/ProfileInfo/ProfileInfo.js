@@ -7,9 +7,6 @@ const ProfileInfo = (props) => {
     if (!props.profile) {
         return <Preloader/>
     }
-
-
-
     return(
         <div className={contentCSS.descriptionBlock}>
             <img src = "https://helpx.adobe.com/content/dam/help/en/photoshop/how-to/compositing/_jcr_content/main-pars/image/compositing_1408x792.jpg"/>

@@ -25,7 +25,6 @@ class UsersContainer extends React.Component {
             });
     }
 
-
     onPageChanged = (pageNumber) => {
         this.props.toogleIsFetching(true);
         this.props.setCurrentPage(pageNumber);
@@ -60,32 +59,5 @@ const mapStateToProps = (state) => {
         isFetching: state.usersPage.isFetching
     }
 }
-/*
-
-const mapDispatchToProps = (dispatch) => {
-    return {
-        follow: (userId) => {
-            dispatch(followAC(userId));
-        },
-        unfollow: (userId) => {
-            dispatch(unfollowAC(userId));
-        },
-        setUsers: (users) => {
-            dispatch(setUsersAC(users));
-        },
-        setCurrentPage: (pageNumber) => {
-            dispatch(setCurrentPageAC(pageNumber));
-        },
-        setTotalUsersCount: (totalCount) => {
-            dispatch(setTotalUsersCountAC(totalCount));
-        },
-        toogleIsFetching: (isFetching) => {
-            dispatch(toogleIsFetchingAC(isFetching));
-        }
-    }
-}
-
-*/
-
 
 export default connect(mapStateToProps, {follow,unfollow,setUsers,setCurrentPage,setTotalUsersCount, toogleIsFetching})(UsersContainer);
